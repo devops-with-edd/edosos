@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @edosos
+- 👋 Hi, I’m @edd
 - 👀 I’m interested in Devops
 - 🌱 I’m currently learning kubernetes
 - 💞️ I’m looking to collaborate on AWS
