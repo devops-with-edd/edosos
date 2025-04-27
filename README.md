@@ -1,8 +1,6 @@
 - 👋 Hi, I’m @edd
-- 👀 I’m interested in Devops
-- 🌱 I’m currently learning kubernetes
-- 💞️ I’m looking to collaborate on AWS
-- 📫 How to reach me ...
+- 👀 I’m a Devops Ing.
+- 🌱 I’m currently working with kubernetes
 
 <!---
 edosos/edosos is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
