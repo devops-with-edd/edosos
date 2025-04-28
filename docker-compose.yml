@@ -1,0 +1,23 @@
+version: '3.8'  # Specify the version of Docker Compose
+
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n
+    restart: always
+    ports:
+      - "80:5678"  # Map port 80 on the host to port 5678 in the container
+    environment:
+      - N8N_HOST=Agrega tu dominio de ngrok aqui sin https   # Set the host to the Ngrok domain
+      - N8N_PORT=5678  # Keep the internal port as 5678
+      - N8N_PROTOCOL=https  # Use http since we're not using HTTPS
+      - NODE_ENV=production
+      - WEBHOOK_URL=Agrega tu dominio de ngrok aqui con https   # Update webhook URL to use Ngrok domain
+      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}  # Keep this if you have a timezone variable
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./local-files:/files  # crea esta carpeta
+      - node_modules:/home/node/.node_modules  # Volume for Node.js modules
+
+volumes:
+  n8n_data:
+  node_modules:  # Declare the node_modules volume
